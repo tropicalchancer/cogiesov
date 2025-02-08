@@ -48,6 +48,7 @@ app.post('/api/analyze', async (req, res) => {
             text: `Analyze the following article and provide:
 
 1. Perspectives (1-2 paragraphs)
+Note: make sure you answer each of the three bullet points. Don't leave any out.
 - Groups likely to support these ideas
 - Groups likely to oppose them
 - Key points of controversy
