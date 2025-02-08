@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cogie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">cogiesov</h1>
+            <p class="subtitle">Paste your article to analyze key perspectives and themes</p>
+        </header>
+
+        <div class="input-section">
+            <textarea id="articleInput" placeholder="Paste your article here..."></textarea>
+            <div id="errorMessage" class="error-message"></div>
+            <button id="analyzeButton">Analyze</button>
+        </div>
+
+        <div id="resultsCard" class="results-section">
+            <!-- Section: Perspectives -->
+            <div class="analysis-section">
+                <h2>Perspectives</h2>
+                
+                <h3>Likely Supporters</h3>
+                <ul id="supportersList"></ul>
+
+                <h3>Likely Opposition</h3>
+                <ul id="oppositionList"></ul>
+
+                <h3>Key Points of Controversy</h3>
+                <div id="controversyContent"></div>
+            </div>
+
+            <!-- Section: Context -->
+            <div class="analysis-section">
+                <h2>Context & Background</h2>
+                <div id="contextContent"></div>
+            </div>
+
+            <!-- Section: Ideas -->
+            <div class="analysis-section">
+                <h2>Key Ideas & Themes</h2>
+                <div id="ideasContent"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
